@@ -427,17 +427,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ', callback_data='autofilter'),
             InlineKeyboardButton('Connection', callback_data='coct')
         ], [
-            InlineKeyboardButton('📑Fillings', callback_data='button'),
+            InlineKeyboardButton('Fillings', callback_data='button'),
             InlineKeyboardButton('Info', callback_data='extra'),
-            InlineKeyboardButton('👮‍♂️Admin', callback_data='admin')
+            InlineKeyboardButton('Admin', callback_data='admin')
         ], [
-            InlineKeyboardButton('🔗Batch', callback_data='batch'),
-            InlineKeyboardButton('😅Alive', callback_data='alive'),
-            InlineKeyboardButton('❗️Report', url='https://t.me/moviereporter46bot')
+            InlineKeyboardButton('Batch', callback_data='batch'),
+            InlineKeyboardButton('Alive', callback_data='alive'),
+            InlineKeyboardButton('Report', url='https://t.me/moviereporter46bot')
         ], [
-            InlineKeyboardButton('🏠 Home', callback_data='start'),
-            InlineKeyboardButton('🧸ꜱᴛᴀᴛᴜꜱ', callback_data='stats'),
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+            InlineKeyboardButton('Home', callback_data='start'),
+            InlineKeyboardButton('ꜱᴛᴀᴛᴜꜱ', callback_data='stats'),
+            InlineKeyboardButton('Close', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -447,11 +447,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🕹️ᴜᴩᴅᴀᴛᴇ', url='https://t.me/FPHDMOVE'),
+            InlineKeyboardButton('ᴜᴩᴅᴀᴛᴇ', url='https://t.me/FPHDMOVE'),
             InlineKeyboardButton('ꜱᴏᴜʀᴄᴇ', callback_data='source')
         ], [
-            InlineKeyboardButton('🏠 Home', callback_data='start'),
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+            InlineKeyboardButton('Home', callback_data='start'),
+            InlineKeyboardButton('Close', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
