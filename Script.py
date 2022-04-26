@@ -22,7 +22,7 @@ IMDb is not a Open source project.
 - <a href='https://t.me/The_user_death'>ᴩʀᴏꜰᴇꜱᴇʀ</a>
 
 <b>SUPPORT GROUP</b>
-- <a href='https://t.me/FilmPiratesGroup'>Jos Movie Club</a>"""
+- <a href='https://t.me/FilmPiratesGroup'>Pirates Group</a>"""
 
     MANUALFILTER_TXT = """Help: <b>Filters</b>
 
