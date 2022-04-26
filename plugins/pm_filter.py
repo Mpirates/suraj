@@ -431,6 +431,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Info', callback_data='extra'),
             InlineKeyboardButton('👮‍♂️Admin', callback_data='admin')
         ], [
+            InlineKeyboardButton('🔗Batch', callback_data='batch')
+        ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
             InlineKeyboardButton('🧸ꜱᴛᴀᴛᴜꜱ', callback_data='stats')
         ]]
@@ -471,6 +473,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.MANUELFILTER_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "batch":
+        buttons = [[
+            InlineKeyboardButton('👩‍🦯 Back', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.BATCH_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
         )
