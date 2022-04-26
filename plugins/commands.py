@@ -45,12 +45,12 @@ async def start(client, message):
             InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ɪɴ yᴏᴜʀ ɢʀᴏᴜᴩ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 ꜱᴇᴀʀᴄʜ ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🕹️ ɢʀᴏᴜᴩ', url='https://t.me/FILIMPIRATESGROUP')
+            InlineKeyboardButton('🕹️ ɢʀᴏᴜᴩ', url='https://t.me/FilmPiratesGroup')
             ],[
             InlineKeyboardButton('⚙️ʜᴇʟᴩ', callback_data='help'),
             InlineKeyboardButton('🥵ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-            InlineKeyboardButton('📢ᴄʜᴀɴɴᴇʟ', url='https://t.me/FPHDMOVE')
+            InlineKeyboardButton('📢ᴄʜᴀɴɴᴇʟ', url='https://t.me/FilmPiratesOfficial')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -90,10 +90,12 @@ async def start(client, message):
             InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ɪɴ yᴏᴜʀ ɢʀᴏᴜᴩ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 ꜱᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🕹️ ɢʀᴏᴜᴩ', url='https://t.me/FILIMPIRATESGROUP')
+            InlineKeyboardButton('🕹️ ɢʀᴏᴜᴩ', url='https://t.me/FilmPiratesGroup')
             ],[
             InlineKeyboardButton('⚙️ʜᴇʟᴩ', callback_data='help'),
             InlineKeyboardButton('🥵ᴀʙᴏᴜᴛ', callback_data='about')
+            ],[
+            InlineKeyboardButton('📢ᴄʜᴀɴɴᴇʟ', url='https://t.me/FilmPiratesOfficial')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
