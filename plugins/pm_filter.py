@@ -432,7 +432,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('👮‍♂️Admin', callback_data='admin')
         ], [
             InlineKeyboardButton('🔗Batch', callback_data='batch'),
-            InlineKeyboardButton('😅Alive', callback_data='alive')
+            InlineKeyboardButton('😅Alive', callback_data='alive'),
+            InlineKeyboardButton('❗️Report', url='https://t.me/moviereporter46bot')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
             InlineKeyboardButton('🧸ꜱᴛᴀᴛᴜꜱ', callback_data='stats'),
