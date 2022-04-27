@@ -252,8 +252,8 @@ This module only works for my admins
     STATUS_TXT = """<b>Total Files:</b> <code>{}</code>
 <b>Total Users:</b> <code>{}</code>
 <b>Total Chats:</b> <code>{}</code>
-<b>Used Storage:</b> <code>{}</code> MiB
-<b>Free Storage:</b> <code>{}</code> MiB"""
+<b>Used Storage:</b> <code>{}</code> 
+<b>Free Storage:</b> <code>{}</code> """
 
     FORCESUB_TXT = """**♦️ READ THIS INSTRUCTION ♦️**
 
