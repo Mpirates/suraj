@@ -591,7 +591,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "batch":
         buttons = [[
-            InlineKeyboardButton('« Back', callback_data='manualfilter')
+            InlineKeyboardButton('« Back', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -602,7 +602,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "alive":
         buttons = [[
-            InlineKeyboardButton('« Back', callback_data='manualfilter')
+            InlineKeyboardButton('« Back', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
