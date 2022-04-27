@@ -220,6 +220,17 @@ All the pin related commands can be found here; keep your chat up to date on the
 • These commands works only group.
 • These commands can be used by Only admin."""
 
+    ALIVE_TXT = """ALIVE MOD
+• /alive - check me alive or dead🤧
+Just for a rasam😂"""
+
+    BATCH_TXT = """The Batch Module
+
+- Add Bot To The From Channel as admin
+- Send /batch Here
+- Forward The First Message With Quotes
+- Forward The Last Message Of The Batch"""
+
     ADMIN_TXT = """Help: <b>Admin Mods</b>
 
 <b>NOTE:</b>
