@@ -134,7 +134,7 @@ async def next_page(bot, query):
     await hehe.delete()
     await message.delete()
    
-    else:
+   else:
         k = await query.message.edit('⚙️Hey {message.from_user.mention},ꜰɪʟᴛᴇʀ ꜰᴏʀ {query} ᴄʟᴏꜱᴇʀ🗑️')
 
 @Client.on_callback_query(filters.regex(r"^spolling"))
