@@ -475,34 +475,23 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('Connect', callback_data='coct'),
             InlineKeyboardButton('Filters', callback_data='auto_manual'),
-            InlineKeyboardButton('G-Trans', callback_data='gtrans'),
+            InlineKeyboardButton('G-Trans', callback_data='gtrans')
             ],[
             InlineKeyboardButton('Info', callback_data='info'),
-            InlineKeyboardButton('Inline', callback_data='inline'),
-            InlineKeyboardButton('Memes', callback_data='memes'),
+            InlineKeyboardButton('Sudo', callback_data='admin'),
+            InlineKeyboardButton('Memes', callback_data='memes')
             ],[
             InlineKeyboardButton('Paste', callback_data='paste'),
             InlineKeyboardButton('Pin', callback_data='pin'),
-            InlineKeyboardButton('Purge', callback_data='purge'),
+            InlineKeyboardButton('Purge', callback_data='purge')
             ],[
-            InlineKeyboardButton('Batch', callback_data='batch'),
-            InlineKeyboardButton('Alive', callback_data='alive'),
-            ],[
-            InlineKeyboardButton('Restrict', callback_data='restric'),
+            InlineKeyboardButton('File-Store', callback_data='batch'),
             InlineKeyboardButton('Search', callback_data='search'),
-            InlineKeyboardButton('Sudo', callback_data='admin'),
-            ],[
-            InlineKeyboardButton('Share-Text', callback_data='sharetext'),
-            InlineKeyboardButton('TTS', callback_data='tts'),
-            InlineKeyboardButton('Torrent', callback_data='torrent'),
-            ],[
-            InlineKeyboardButton('TGraph', callback_data='tgraph'),
-            InlineKeyboardButton('URL Short', callback_data='shortner'),
-            InlineKeyboardButton('YouTube', callback_data='music'),
+            InlineKeyboardButton('Restrict', callback_data='restric')
             ],[
             InlineKeyboardButton('Zombies', callback_data='zombies'),
-            InlineKeyboardButton('🧸 ꜱᴛᴀᴛᴜꜱ', callback_data='stats'),
             InlineKeyboardButton('« Back', callback_data='start')
+            InlineKeyboardButton('ꜱᴛᴀᴛᴜꜱ', callback_data='stats'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1018,7 +1007,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>🎬 Title:</b> {search}\n</b>\n<b><✍️ Note:</b> <s>This message will be Auto-deleted after 5 minute to avoid copyright issues.</s>"
+        cap = f"<b>📽️ Film :</b> {search}\n</b>\n<b><✍️ Note:</b> <s>This message will be Auto-deleted after 5 minute to avoid copyright issues.</s>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
