@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/EvamariaTG/EvaMaria",
-    "repository": "https://github.com/hackgit12/devil",
+    "website": "https://github.com/Mpirates/suraj",
+    "repository": "https://github.com/Mpirates/suraj",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
